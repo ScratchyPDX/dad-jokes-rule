@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes Rule | Search</title>
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/search-page-styles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div w3-include-html="header.html"></div>
+      <main class="dad-joke-grid">
+        <section id="search-grid">
+          <h1 class="page-title">Dad Jokes Searcher</h1>
+          <img class="search-background" src="images/laughing-emojis-wide.png" alt="laughing emojis background">
+          <section id="search-section">
+            <input id="searchBy" placeholder="Enter search term..."/>
+            <button id="searchButton">Search</button>
+            <p>
+              Pages:
+              <button id="prevButton">Prev</button>
+              <button id="nextButton">Next</button>
+            </p>
+          </section>
+        </section>
+      </main>
+      <div>
+        <h4 id="countGoesHere"></h4>
+        <table id="jokesGoHere"></table>
+      </div>
+      <div w3-include-html="footer.html"></div>
+    </div>
+    <script>
+      w3.includeHTML();
+    </script>
+    <script src="scripts/dad-jokes-api.js"></script>
+  </body>
+</html>

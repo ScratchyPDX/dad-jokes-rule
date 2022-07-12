@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes Rule | Home</title>
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scripts/main-page.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div w3-include-html="header.html"></div>
+
+      <main>
+        <h1 class="page-title">Dad Jokes Rule!</h1>
+        <section id="top-grid">
+          <img id="left" src="images/floating-laughing-emoji.webp" alt="laughing emojis" />
+          <p class="center">
+            Why dad jokes? Puns and corny humor are the cornerstone of parental comedy. 
+            Some people would say they are the sign of a sick mind, while others state 
+            that the use of puns displays a sign of high intelligence. However, whether 
+            the teller is a simpleton, genius, or somewhere in between, one thing is true: 
+            dad jokes bring laughter…and maybe a few groans and eyerolls too.
+          </p>
+          <img id="right" src="images/laughing-man-watching-funny-movie.jpg" alt="man laughing" />
+        </section>
+        <section id="joke-of-the-day">
+          <h2>Joke of the Day</h2>
+          <p id="randomJokeGoHere"></p>
+        </section>
+        <h2>Merch of the Day</h2>
+        <section id="merch-grid">
+          <h3>Dad Joke Button | Novelty Talking Button Present</h3>
+          <img src="images/store/dad-joke-button.jpg" alt="dad joke button device" />
+          <ul>
+            <li>Push the Dad Joke Button for a HILARIOUSLY FUNNY Dad Joke</li>
+            <li>Over 50 Dad Jokes to make the entire family LOL - Be the favourite 
+              son or daughter, or the ultimate mum!
+            </li>
+            <li>The essential gift for every Dad: New Dads, Old Dads, Granddads, 
+              Dads to Be, Fathers Day Dads... or just anyone who loves a quality Dad Joke
+            </li>
+            <li>Extra loud speaker</li>
+          </ul>
+          <form action="https://www.amazon.com/Dad-Joke-Button-Fathers-Novelty/dp/B07ZBHBPSD/ref=sr_1_7" target="_blank">
+            <button type="submit">Buy</button>
+          </form>
+        </section>
+      </main>
+      <div w3-include-html="footer.html"></div>
+    </div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>
